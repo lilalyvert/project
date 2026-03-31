@@ -1,4 +1,4 @@
-1. Purpose
+## Purpose
 
 This agent is responsible for generating and maintaining a minimal browser-based stress tracking application using only:
 
@@ -8,7 +8,7 @@ Vanilla JavaScript
 
 The goal is to build a simple, functional, and easy-to-understand app that allows users to input stress-related information and receive structured outputs for both personal and research use.
 
-2. Core Responsibilities
+## Core Responsibilities
 
 The agent must:
 
@@ -20,7 +20,7 @@ Process user input into:
 A clean user-facing summary
 A structured researcher-facing record
 Ensure the app runs entirely in the browser (no backend)
-3. Required User Inputs
+## Required User Inputs
 
 The application must collect:
 
@@ -29,8 +29,8 @@ Main stressor
 Stress severity (scale 1–5)
 Coping strategies used
 Short open-text emotional description
-4. Required Outputs
-4.1 User-Facing Output
+## Required Outputs
+## User-Facing Output
 
 Must:
 
@@ -45,7 +45,7 @@ Must NOT:
 
 Provide medical, psychological, or diagnostic advice
 Sound like therapy or counseling
-4.2 Researcher-Facing Output
+## Researcher-Facing Output
 
 Must generate a structured object containing:
 
@@ -60,7 +60,7 @@ This can be:
 
 Displayed on screen
 Or stored in localStorage
-5. Stress Classification Logic
+## Stress Classification Logic
 
 The agent must classify the stressor into one of:
 
@@ -75,7 +75,7 @@ Classification should be:
 Keyword-based
 Simple and transparent
 Deterministic (same input → same output)
-6. Technical Constraints
+## Technical Constraints
 
 The agent MUST:
 
@@ -88,7 +88,7 @@ Frameworks (React, Vue, etc.)
 External libraries (unless extremely minimal)
 Backend systems
 Databases
-7. Storage Rules
+## Storage Rules
 
 The agent should choose ONE of:
 
@@ -100,7 +100,7 @@ Do NOT:
 Build authentication
 Connect to APIs
 Use external storage
-8. UI & Design Principles
+## UI & Design Principles
 
 The interface must be:
 
@@ -110,7 +110,7 @@ Input section
 Output section
 Minimal styling (no over-design)
 Easy to inspect in browser dev tools
-9. Constraints (Critical)
+## Constraints (Critical)
 
 The agent must:
 
@@ -119,7 +119,7 @@ Keep logic easy to follow and inspect
 Avoid overengineering
 Avoid unnecessary features
 Avoid vague or ambiguous outputs
-10. Quality Standards
+## Quality Standards
 
 The generated app should:
 
@@ -127,7 +127,7 @@ Work immediately when opened in a browser
 Have no console errors
 Use clear variable names
 Be logically organized
-11. Non-Goals
+## Non-Goals
 
 The agent should NOT:
 
@@ -136,7 +136,7 @@ Add advanced UI/UX features
 Include analytics or tracking
 Simulate real psychological evaluation
 Overcomplicate classification logic
-12. Success Criteria
+## Success Criteria
 
 The app is successful if:
 
@@ -162,7 +162,7 @@ Send or receive data over the internet
 Store data outside the browser environment
 Execute system-level commands
 Modify files outside the project scope
-14. Functional Requirements
+## Functional Requirements
 
 The agent must ensure:
 
@@ -171,7 +171,7 @@ All user inputs are captured correctly
 A stress category is always assigned
 Outputs are generated immediately after submission
 No runtime errors occur in the browser console
-15. Behavioral Constraints
+## Behavioral Constraints
 
 The agent must:
 
@@ -185,7 +185,7 @@ The agent must NOT:
 Guess missing data
 Produce random or inconsistent outputs
 Overcomplicate logic or introduce unnecessary abstraction
-16. Safety & Ethical Constraints
+## Safety & Ethical Constraints
 
 The agent must:
 
@@ -198,8 +198,8 @@ The agent must NOT:
 
 Label users with conditions
 Provide crisis or mental health treatment guidance
-Make assumptions about user identity or situation
-17. Error Handling
+Make assumptions about the user’s identity or situation
+## Error Handling
 
 The agent should:
 
@@ -211,7 +211,7 @@ The agent must NOT:
 
 Crash or break the UI
 Display raw errors to the user
-18. Output Quality Standards
+## Output Quality Standards
 
 All outputs must be:
 
@@ -219,7 +219,7 @@ Clear and readable
 Logically structured
 Free of unnecessary technical jargon (for user-facing output)
 Consistent in format across submissions
-19. Scope Limitations
+## Scope Limitations
 
 This agent is intentionally limited to:
 
@@ -232,3 +232,6 @@ The agent will NOT:
 Scale to multi-user systems
 Store long-term datasets externally
 Perform advanced analytics or predictions
+## Determinism & Predictability
+
+The agent should produce consistent outputs for the same inputs and avoid randomness unless explicitly required.
