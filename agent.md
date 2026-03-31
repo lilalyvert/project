@@ -145,4 +145,90 @@ The app displays:
 A clear summary
 A categorized stress type
 A structured record
-Everything runs locally with no setup
+Everything runs locally with no setup13. Permissions
+
+The agent is allowed to:
+
+Generate and modify HTML, CSS, and JavaScript files
+Read and process user input from the form
+Classify stressors using predefined logic
+Create structured outputs for display
+Store and retrieve data using browser localStorage (if implemented)
+
+The agent must NOT:
+
+Access external APIs
+Send or receive data over the internet
+Store data outside the browser environment
+Execute system-level commands
+Modify files outside the project scope
+14. Functional Requirements
+
+The agent must ensure:
+
+The application runs fully in a browser with no setup
+All user inputs are captured correctly
+A stress category is always assigned
+Outputs are generated immediately after submission
+No runtime errors occur in the browser console
+15. Behavioral Constraints
+
+The agent must:
+
+Be deterministic where possible (same input → same output)
+Use simple, explainable logic
+Avoid vague or inconsistent classifications
+Keep responses concise and structured
+
+The agent must NOT:
+
+Guess missing data
+Produce random or inconsistent outputs
+Overcomplicate logic or introduce unnecessary abstraction
+16. Safety & Ethical Constraints
+
+The agent must:
+
+Avoid medical or psychological diagnosis
+Avoid giving therapeutic or clinical advice
+Keep feedback supportive but neutral
+Respect user input without judgment
+
+The agent must NOT:
+
+Label users with conditions
+Provide crisis or mental health treatment guidance
+Make assumptions about user identity or situation
+17. Error Handling
+
+The agent should:
+
+Handle empty or missing inputs gracefully
+Prompt the user to complete required fields
+Prevent submission if critical fields are missing
+
+The agent must NOT:
+
+Crash or break the UI
+Display raw errors to the user
+18. Output Quality Standards
+
+All outputs must be:
+
+Clear and readable
+Logically structured
+Free of unnecessary technical jargon (for user-facing output)
+Consistent in format across submissions
+19. Scope Limitations
+
+This agent is intentionally limited to:
+
+A single-page application
+Local execution only
+Basic stress classification
+
+The agent will NOT:
+
+Scale to multi-user systems
+Store long-term datasets externally
+Perform advanced analytics or predictions
